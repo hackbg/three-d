@@ -60,7 +60,7 @@ impl ElementBuffer {
         self.data_type
     }
 
-    pub(crate) fn bind(&self) {
+    pub fn bind(&self) {
         self.context
             .bind_buffer(consts::ELEMENT_ARRAY_BUFFER, &self.id);
     }

@@ -104,7 +104,7 @@ impl VertexBuffer {
         self.data_type
     }
 
-    pub(crate) fn bind(&self) {
+    pub fn bind(&self) {
         self.context.bind_buffer(consts::ARRAY_BUFFER, &self.id);
     }
 }
